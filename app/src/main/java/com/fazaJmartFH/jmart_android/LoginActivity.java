@@ -19,7 +19,8 @@ import org.json.JSONObject;
 
 import com.fazaJmartFH.jmart_android.model.Account;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity
+{
 
     private static final Gson gson = new Gson();
     private static Account loggedAccount = null;
@@ -30,18 +31,21 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-       final EditText loginEmail = findViewById(R.id.loginEmail);
-       final EditText loginPassword = findViewById(R.id.loginPassword);
+       final EditText loginEmail = findViewById(R.id.login_email);
+       final EditText loginPassword = findViewById(R.id.login_password);
        final Button login = findViewById(R.id.Login);
        final TextView register = findViewById(R.id.register);
 
-        register.setOnClickListener(new View.OnClickListener() {
+        register.setOnClickListener(new View.OnClickListener()
+        {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }
@@ -52,7 +56,8 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public  void onClick (View v)
             {
-                Response.Listener<String> listener = new Response.Listener<String>() {
+                Response.Listener<String> listener = new Response.Listener<String>()
+                {
                     @Override
                     public void onResponse(String response)
                     {

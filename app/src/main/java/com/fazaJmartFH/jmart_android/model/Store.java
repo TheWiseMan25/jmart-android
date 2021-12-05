@@ -2,7 +2,8 @@ package com.fazaJmartFH.jmart_android.model;
 
 public class Store
 {
-    String address;
-    String name;
-    String phoneNumber;
+    public String name;
+    public String address;
+    public String phoneNumber;
+    public double balance;
 }

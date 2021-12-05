@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".AboutMeActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/detail_aboutme"
+        android:layout_width="358dp"
+        android:layout_height="230dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063">
+
+        <TextView
+            android:id="@+id/tulisan_aboutme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="220dp"
+            android:layout_marginBottom="5dp"
+            android:text="Account Details"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/tabel_data_aboutme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/tabel_data_aboutme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/detail_aboutme"
+            android:layout_marginTop="52dp"
+            android:stretchColumns="1"
+            app:layout_constraintTop_toBottomOf="@+id/detail_aboutme"
+            tools:layout_editor_absoluteX="0dp">
+
+            <TableRow
+                android:id="@+id/tabel_nama_aboutme"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+
+                    android:id="@+id/textview_nama_aboutme"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Name"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:id="@+id/nama_aboutme"
+                    android:gravity="right"
+                    android:padding="3dip"
+
+                    android:text="null"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabel_email_aboutme"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textview_email_aboutme"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Email"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/email_aboutme"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:text="null"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabel_balance_aboutme"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/textview_balance_aboutme"
+                    android:layout_column="1"
+                    android:padding="3dip"
+                    android:text="Balance"
+                    android:textSize="16sp" />
+
+                <TextView
+
+                    android:id="@+id/balance_aboutme"
+                    android:gravity="right"
+                    android:padding="3dip"
+
+                    android:text="null"
+                    android:textColor="@color/red"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tabel_topup_aboutme"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_topup_aboutme"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Top Up Amount"
+
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_topup_aboutme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#FFFFFF" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/button_topup_aboutme"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:text="TOP UP" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button_register_aboutme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.6"
+        android:text="REGISTER STORE"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutRegisterStore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_aboutme"
+        app:layout_constraintVertical_bias="0.233" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayoutRegisterStore"
+        android:layout_width="360dp"
+        android:layout_height="365dp"
+        android:layout_below="@id/detail_aboutme"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_aboutme">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_register_aboutme"
+            android:layout_width="362dp"
+            android:layout_height="362dp"
+            android:layout_margin="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="3dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.777">
+
+
+            <LinearLayout
+                android:id="@+id/form_register_aboutme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tulisan_registerstore_aboutme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Register Store"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_nama_aboutme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundColor="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_nama_aboutme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_email_aboutme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    app:boxBackgroundColor="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_email_aboutme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_phone_aboutme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:inputType="phone|number"
+                    app:boxBackgroundColor="@color/white">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/input_phone_aboutme"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+
+                    android:id="@+id/buttons_registration_aboutme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/buttons_register_aboutme"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="REGISTER" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:textSize="20sp" />
+
+                    <Button
+                        android:id="@+id/buttons_cancel_aboutme"
+                        style="?attr/materialButtonOutlinedStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="CANCEL" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
