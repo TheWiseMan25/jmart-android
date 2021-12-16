@@ -8,14 +8,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
 import com.fazaJmartFH.jmart_android.model.Account;
 import com.fazaJmartFH.jmart_android.request.RegisterRequest;
 import com.google.gson.Gson;
-
 import org.json.JSONObject;
 import org.json.JSONException;
 
@@ -50,7 +48,7 @@ public class RegisterActivity extends AppCompatActivity
                             JSONObject jsonObject = new JSONObject(response);
                             if(jsonObject!=null)
                             {
-                                Toast.makeText(RegisterActivity.this, "Registration is successful!", Toast.LENGTH_SHORT);
+                                Toast.makeText(RegisterActivity.this, "Registrasi berhasil!", Toast.LENGTH_SHORT);
                                 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
                                 loggedAccount = gson.fromJson(jsonObject.toString(),Account.class);
                                 startActivity(intent);

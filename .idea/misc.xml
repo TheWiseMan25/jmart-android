@@ -7,13 +7,17 @@
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.36875" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.17407407407407408" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_about_me.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_check_out.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_create_product.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_payment.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_product_detail.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/fragment_filter.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/layout/fragment_product.xml" value="0.36666666666666664" />
         <entry key="..\:/OneDrive/jmart-android/app/src/main/res/menu/menu_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/OneDrive/jmart-android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
       </map>
     </option>
   </component>

@@ -4,9 +4,6 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class RequestFactory
 {
     private static final String URL_FORMAT_ID = "http://10.0.2.2:8080/%s/%d";
@@ -18,7 +15,6 @@ public class RequestFactory
                     int id,
                     Response.Listener<String> listener,
                     Response.ErrorListener errorListener
-
             )
     {
         String url = String.format(URL_FORMAT_ID, parentURI, id);

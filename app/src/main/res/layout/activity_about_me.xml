@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginLeft="20dp"
-    android:layout_marginRight="20dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
     tools:context=".AboutMeActivity"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/detail_aboutme"
+        android:id="@+id/account_constraint"
         android:layout_width="358dp"
         android:layout_height="230dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_register"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063">
+        android:layout_marginHorizontal="20dp"
+        >
 
         <TextView
-            android:id="@+id/tulisan_aboutme"
+            android:id="@+id/tulisan_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
@@ -30,29 +31,29 @@
             android:layout_marginBottom="5dp"
             android:text="Account Details"
             android:textSize="20sp"
-            app:layout_constraintBottom_toTopOf="@+id/tabel_data_aboutme"
+            app:layout_constraintBottom_toTopOf="@+id/detailproduk_table_layout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TableLayout
-            android:id="@+id/tabel_data_aboutme"
+            android:id="@+id/detailproduk_table_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_below="@id/detail_aboutme"
+            android:layout_below="@id/account_constraint"
             android:layout_marginTop="52dp"
             android:stretchColumns="1"
-            app:layout_constraintTop_toBottomOf="@+id/detail_aboutme"
+            app:layout_constraintTop_toBottomOf="@+id/account_constraint"
             tools:layout_editor_absoluteX="0dp">
 
             <TableRow
-                android:id="@+id/tabel_nama_aboutme"
+                android:id="@+id/name_table_row"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp">
 
                 <TextView
 
-                    android:id="@+id/textview_nama_aboutme"
+                    android:id="@+id/name_textview"
                     android:layout_column="1"
                     android:padding="3dip"
                     android:text="Name"
@@ -60,7 +61,7 @@
 
                 <TextView
 
-                    android:id="@+id/nama_aboutme"
+                    android:id="@+id/name"
                     android:gravity="right"
                     android:padding="3dip"
 
@@ -69,19 +70,19 @@
             </TableRow>
 
             <TableRow
-                android:id="@+id/tabel_email_aboutme"
+                android:id="@+id/address_table_row"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp">
 
                 <TextView
-                    android:id="@+id/textview_email_aboutme"
+                    android:id="@+id/address_textview"
                     android:layout_column="1"
                     android:padding="3dip"
-                    android:text="Email"
+                    android:text="Address"
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/email_aboutme"
+                    android:id="@+id/address"
                     android:gravity="right"
                     android:padding="3dip"
                     android:text="null"
@@ -89,12 +90,12 @@
             </TableRow>
 
             <TableRow
-                android:id="@+id/tabel_balance_aboutme"
+                android:id="@+id/balance_table_row"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp">
 
                 <TextView
-                    android:id="@+id/textview_balance_aboutme"
+                    android:id="@+id/balance_textview"
                     android:layout_column="1"
                     android:padding="3dip"
                     android:text="Balance"
@@ -102,7 +103,7 @@
 
                 <TextView
 
-                    android:id="@+id/balance_aboutme"
+                    android:id="@+id/balance"
                     android:gravity="right"
                     android:padding="3dip"
 
@@ -112,24 +113,26 @@
             </TableRow>
 
             <TableRow
-                android:id="@+id/tabel_topup_aboutme"
+                android:id="@+id/topup_table_row"
                 android:layout_marginTop="0dp"
                 android:layout_marginBottom="10dp">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_topup_aboutme"
+                    android:id="@+id/topup_layout"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Top Up Amount"
 
+
                     >
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_topup_aboutme"
+                        android:id="@+id/topup_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#FFFFFF" />
+                        android:backgroundTint="#FFFFFF"
+                        android:inputType="numberDecimal" />
 
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -141,7 +144,7 @@
                     android:textSize="20sp" />
 
                 <Button
-                    android:id="@+id/button_topup_aboutme"
+                    android:id="@+id/button_topup"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.6"
@@ -155,33 +158,34 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button_register_aboutme"
+        android:id="@+id/button_register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.6"
         android:text="REGISTER STORE"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayoutRegisterStore"
+        app:layout_constraintBottom_toTopOf="@+id/register_constraint"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_aboutme"
+        app:layout_constraintTop_toBottomOf="@+id/account_constraint"
         app:layout_constraintVertical_bias="0.233" />
 
+    <!--    form registrasi store-->
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayoutRegisterStore"
+        android:id="@+id/register_constraint"
         android:layout_width="360dp"
         android:layout_height="365dp"
-        android:layout_below="@id/detail_aboutme"
+        android:layout_below="@id/account_constraint"
         android:layout_marginTop="10dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/detail_aboutme">
+        app:layout_constraintTop_toBottomOf="@+id/account_constraint">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_register_aboutme"
+            android:id="@+id/register_cardview"
             android:layout_width="362dp"
             android:layout_height="362dp"
             android:layout_margin="0dp"
@@ -197,14 +201,12 @@
             app:cardUseCompatPadding="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.777">
+            app:layout_constraintTop_toTopOf="parent">
 
 
             <LinearLayout
-                android:id="@+id/form_register_aboutme"
+                android:id="@+id/register_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -214,7 +216,6 @@
 
 
                 <TextView
-                    android:id="@+id/tulisan_registerstore_aboutme"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
@@ -225,13 +226,13 @@
                     android:textSize="16sp" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_nama_aboutme"
+                    android:id="@+id/store_textlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:boxBackgroundColor="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_nama_aboutme"
+                        android:id="@+id/store_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Name" />
@@ -240,14 +241,14 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_email_aboutme"
+                    android:id="@+id/address_textlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     app:boxBackgroundColor="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_email_aboutme"
+                        android:id="@+id/address_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Address" />
@@ -256,7 +257,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_phone_aboutme"
+                    android:id="@+id/phone_textlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -264,7 +265,7 @@
                     app:boxBackgroundColor="@color/white">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/input_phone_aboutme"
+                        android:id="@+id/phone_input"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Phone Number" />
@@ -274,7 +275,7 @@
 
                 <LinearLayout
 
-                    android:id="@+id/buttons_registration_aboutme"
+                    android:id="@+id/buttons_register"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
@@ -282,7 +283,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/buttons_register_aboutme"
+                        android:id="@+id/button_register_store"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -295,7 +296,7 @@
                         android:textSize="20sp" />
 
                     <Button
-                        android:id="@+id/buttons_cancel_aboutme"
+                        android:id="@+id/button_cancel_store"
                         style="?attr/materialButtonOutlinedStyle"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
@@ -305,6 +306,127 @@
                 </LinearLayout>
 
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    menampilkan hasil registrasi store-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/store_constraint"
+        android:visibility="invisible"
+        android:layout_width="369dp"
+        android:layout_height="424dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_constraint">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/store_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="240dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardMaxElevation="5dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/store_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="30dp"
+                    android:text="Store" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/store_name_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Name" />
+
+                    <TextView
+                        android:id="@+id/store_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/store_address_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Address" />
+
+                    <TextView
+                        android:id="@+id/store_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/store_phone_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Phone Number" />
+
+                    <TextView
+                        android:id="@+id/store_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:layout_weight="1"
+                        android:textAlignment="textEnd" />
+                </LinearLayout>
+
+            </LinearLayout>
+
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

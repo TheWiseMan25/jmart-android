@@ -13,39 +13,42 @@
         android:id="@+id/linearLayout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+
+
+        >
 
         <View
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <Button
-            android:id="@+id/prev_button"
+            android:id="@+id/button_previous"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="PREV"/>
+            android:text="PREV" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <Button
-            android:id="@+id/next_button"
+            android:id="@+id/button_next"
             style="?attr/materialButtonOutlinedStyle"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="NEXT"/>
+            android:text="NEXT" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/input_halaman"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -55,18 +58,20 @@
         <View
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
         <Button
-            android:id="@+id/go_button"
+            android:id="@+id/button_go"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
-            android:text="GO"/>
+            android:text="GO" />
 
         <View
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
+
     </LinearLayout>
 
     <ListView
@@ -76,6 +81,5 @@
         android:layout_below="@id/linearLayout1"
 
         android:layout_marginTop="-2dp"
-        android:visibility="visible"
-        />
+        android:visibility="visible" />
 </RelativeLayout>
