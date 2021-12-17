@@ -18,6 +18,15 @@ import com.google.gson.Gson;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+ * CreateProductActivity Class
+ *
+ * Digunakan untuk menampilkan pengaturan untuk membuat produk baru.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class CreateProductActivity extends AppCompatActivity
 {
 

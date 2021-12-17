@@ -11,6 +11,15 @@ import android.widget.*;
 import com.google.android.material.textfield.TextInputLayout;
 import com.fazaJmartFH.jmart_android.model.Product;
 
+/**
+ * FilterFragment Class
+ *
+ * Digunakan untuk menampilkan filter pada MainActivity. Class ini merupakan fragment.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class FilterFragment extends Fragment implements ProductFragment.ProductFragmentListener
 {
     private FragmentManager mFragmentManager;

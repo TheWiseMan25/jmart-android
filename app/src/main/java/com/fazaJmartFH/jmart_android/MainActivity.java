@@ -17,7 +17,15 @@ import com.google.android.material.tabs.TabLayout;
 
 import com.fazaJmartFH.jmart_android.model.Product;
 
-
+/**
+ * MainActivity Class
+ *
+ * Digunakan untuk menampilkan halaman utama.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class MainActivity extends AppCompatActivity implements ProductFragment.ProductFragmentListener
 {
     TabLayout tabLayout;

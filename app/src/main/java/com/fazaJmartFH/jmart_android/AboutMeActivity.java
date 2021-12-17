@@ -23,6 +23,15 @@ import com.fazaJmartFH.jmart_android.model.Store;
 import com.fazaJmartFH.jmart_android.request.RegisterStoreRequest;
 import com.fazaJmartFH.jmart_android.request.TopUpRequest;
 
+/**
+ * AboutMeActivity Class
+ *
+ * Digunakan untuk menampilkan informasi data diri.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class AboutMeActivity extends AppCompatActivity
 {
 

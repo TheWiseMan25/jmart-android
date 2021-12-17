@@ -9,6 +9,15 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * ProductDetailActivity Class
+ *
+ * Digunakan untuk menampilkan halaman detail produk.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class ProductDetailActivity extends AppCompatActivity
 {
 

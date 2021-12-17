@@ -16,6 +16,15 @@ import com.fazaJmartFH.jmart_android.model.Account;
 import com.fazaJmartFH.jmart_android.request.LoginRequest;
 import com.google.gson.Gson;
 
+/**
+ * LoginActivity Class
+ *
+ * Digunakan untuk menampilkan halaman log in.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class LoginActivity extends AppCompatActivity
 {
     private static final Gson gson = new Gson();

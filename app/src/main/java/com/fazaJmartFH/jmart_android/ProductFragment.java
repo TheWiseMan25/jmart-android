@@ -26,6 +26,15 @@ import java.util.ArrayList;
 import com.fazaJmartFH.jmart_android.model.Product;
 import com.fazaJmartFH.jmart_android.request.RequestFactory;
 
+/**
+ * ProductFragment Class
+ *
+ * Digunakan untuk menampilkan produk pada MainActivity. Class ini merupakan fragment.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class ProductFragment extends Fragment
 {
 

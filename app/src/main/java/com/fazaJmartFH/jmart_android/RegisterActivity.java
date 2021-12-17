@@ -17,6 +17,15 @@ import com.google.gson.Gson;
 import org.json.JSONObject;
 import org.json.JSONException;
 
+/**
+ * RegisterActivity Class
+ *
+ * Digunakan untuk menampilkan halaman register.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class RegisterActivity extends AppCompatActivity
 {
     private static final Gson gson = new Gson();

@@ -16,6 +16,15 @@ import org.json.JSONObject;
 import com.fazaJmartFH.jmart_android.model.Payment;
 import com.fazaJmartFH.jmart_android.request.PaymentRequest;
 
+/**
+ * PaymentActivity Class
+ *
+ * Digunakan untuk menampilkan pembayaran.
+ *
+ * @author Nabil Mafaza
+ * @version 0.1
+ * @since 17-12-2021
+ */
 public class PaymentActivity extends AppCompatActivity
 {
 
